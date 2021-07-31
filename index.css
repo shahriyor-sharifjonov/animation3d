@@ -57,7 +57,7 @@ body{
   opacity: 0;
   transition-delay: 0ms;
 }
-.your-element__p::after{
+.your-element__p::after{ 
   content: 'webDeveloper';
   position: absolute;
   width: 200px;
