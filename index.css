@@ -33,7 +33,7 @@ body{
   box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
 }
 .your-element__p{
-  transition: 0.5s;
+  transition: 0.2s;
   transform-style: preserve-3d;
   transform: perspective(1000px);
   transform: translateZ(40px);
@@ -45,12 +45,12 @@ body{
 .your-element__p::before{
   content: 'Sharifjonov';
   position: absolute;
-  transition: 0.5s;
+  transition: 0.2s;
   font-size: 12px;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  transition-delay: 400ms;
+  transition-delay: 200ms;
 }
 .your-element:hover .your-element__p::before{
   transform: translateY(-50%) translateX(-50%);
@@ -61,8 +61,8 @@ body{
   content: 'webDeveloper';
   position: absolute;
   width: 200px;
-  transition: 0.5s;
-  transition-delay: 0.2s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
   font-size: 12px;
   width: 100%;
   bottom: -15px;
