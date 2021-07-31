@@ -71,6 +71,6 @@ body{
   opacity: 0;
 }
 .your-element:hover .your-element__p::after{
-  transform: translateY(0) translateX(-50%);
+  transform: translateY(0) translateX(-50%); 
   opacity: 1;
 }
