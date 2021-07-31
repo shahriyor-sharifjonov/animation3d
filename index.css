@@ -60,11 +60,10 @@ body{
 .your-element__p::after{ 
   content: 'webDeveloper';
   position: absolute;
-  width: 200px;
   transition: 0.2s;
   transition-delay: 0.1s;
   font-size: 12px;
-  width: 100%;
+  width: max-content;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
