@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat';
+}
+.your-element{
+  background: rgb(2,0,36);
+  background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  text-decoration: none;
+  padding: 20px 30px 30px 30px;
+}
+.your-element:hover{
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
+}
+.your-element__p{
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transform: translateZ(40px);
+  border-radius: 12px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+.your-element__p::before{
+  content: 'Sharifjonov';
+  position: absolute;
+  transition: 0.5s;
+  font-size: 12px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-delay: 400ms;
+}
+.your-element:hover .your-element__p::before{
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0;
+  transition-delay: 0ms;
+}
+.your-element__p::after{
+  content: 'webDeveloper';
+  position: absolute;
+  width: 200px;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  font-size: 12px;
+  width: 100%;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  opacity: 0;
+}
+.your-element:hover .your-element__p::after{
+  transform: translateY(0) translateX(-50%);
+  opacity: 1;
+}
