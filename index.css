@@ -43,7 +43,7 @@ body{
   color: #fff;
 }
 .your-element__p::before{
-  content: 'Sharifjonov';
+  content: 'sharifjonov';
   position: absolute;
   transition: 0.2s;
   font-size: 12px;
